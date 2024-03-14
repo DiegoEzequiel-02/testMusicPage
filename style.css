@@ -1,0 +1,185 @@
+
+*{
+    background: #222831;
+}
+
+a{
+    background-color: transparent;
+}
+
+header{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #9290C3;
+    padding: 0;
+    margin:0;
+    border-radius: 15px; 
+}
+
+h1,h2 {
+    font-family: 'coolveticaregular', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    color:white;
+}
+
+@font-face {
+    font-family: 'coolveticaregular';
+    src: url('font/coolvetica_rg-webfont.woff2') format('woff2'),
+         url('font/coolvetica_rg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.rating{
+    position:relative;
+    display:flex;
+    flex-direction: row-reverse;
+    padding: 20px 30px;
+    border:3px solid #111;
+    border-radius: 30px;
+    background: #31363F;
+}
+
+.rating input{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.rating input::before{
+    content: '\f005';
+    position:absolute;
+    font-family: fontAwesome;
+    font-size: 25px;
+    color:#111;
+    transition: .5s;
+    background: #31363F;
+}
+
+.rating input:hover ~ input::before,
+.rating input:hover::before,
+.rating input:checked ~ input::before,
+.rating input:checked::before
+{
+    color: var(--c);
+}
+
+ul.artistas{
+    justify-content: center;
+    font-family: 'coolveticaregular', Arial, sans-serif;
+    color:white;
+    list-style-type:none;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+}
+
+li.art{
+    margin: 0.75rem;
+    font-family: 'coolveticaregular', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    color:rgb(112, 107, 107);
+    display: inline-block;
+    font-size: 30px;
+}
+
+.fotos{
+    border: 5px solid #76ABAE;
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    margin-left:15px;
+}
+
+.subtitulo{
+    font-family:'coolveticaregular';
+}
+
+.pres{
+    display: flexbox;
+    text-align: center;
+}
+.fa-house{
+    background:#535C91;
+    border: 0;
+}
+.Menu{
+    font-family:'coolveticaregular';
+    background:#535C91;
+    border-radius: 15px;
+    display: flex;
+    margin: 0;
+    padding: 5px;
+    border: 5px;
+    list-style-type: none;
+    font-size: 25px;
+    list-style: none;
+}
+
+li.menuNav{
+    padding: 10px;
+    background:#535C91;
+    border: none;
+}
+
+li.menuNav:hover{
+    background: #76ABAE;
+    margin: 0;
+    border-radius:10px;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+li.listas{
+    margin: 0.75rem;
+    font-family: 'coolveticaregular', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    color:rgb(112, 107, 107);
+    display: inline-block;
+    font-size: 20px;
+    text-align: justify;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #618b8d;
+    padding: 0;
+    margin:0;
+    border-radius: 15px;
+    font-family: 'coolveticaregular';
+    color:rgba(255, 255, 255, 0.699);
+}
+
+.videos{
+    border: 5px solid #76ABAE;
+    border-radius: 20px;
+    margin-left:20px;
+}
+
+.audios{
+    border: 5px solid #76ABAE;
+    border-radius: 40px;
+    margin-left:10px;
+}
